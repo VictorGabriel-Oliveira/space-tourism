@@ -1,0 +1,159 @@
+.header_conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85vw;
+    padding:  24px;
+    position: relative;
+    font-size: 20px;
+       font-weight: bold;
+
+    hr{
+        display: none;
+    }
+    .logo{
+        img{
+            height: 40px;
+            width: 40px;
+        }
+    }
+
+    .navBar{
+        img{
+            height: 21px;
+            height: 24px;
+        }
+        
+    }
+    
+    .menu{
+
+        display: flex;
+        flex-direction: column;
+
+        backdrop-filter: blur(81.5485px);
+        border-left: 1px solid #979797;
+        
+        color: white;
+        position: absolute;
+        width: 65vw;
+        height: 100vh;
+        right: -3px;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        
+        list-style: none;
+       
+        img{
+            height: 21px;
+            width: 24px;
+            margin: 30px;
+            margin-bottom: 60px;
+            position: relative;
+
+            right: -65%;
+        }
+        li{
+            
+            *{
+                margin-right: 5px ;
+                color: white;
+                text-decoration: none;
+            }
+            
+            margin-left: 20px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media (min-width:760px) {
+   .header_conteiner{
+       width: 100vw;
+       padding: 0;
+       
+       color: #fff;
+       .navBar{
+           display: none;  
+       }
+
+       .logo{
+           padding: 24px;
+           height: 48px;
+           width: 48px;
+       }
+       .menu{
+           .close{display: none;}
+           
+           border: none;
+           background-color: rgba(255, 255, 255, 0.04);
+           backdrop-filter: blur(0);
+           color: white;
+           position: absolute;
+            width: 450px;
+            height: 96px;
+            top: 0px;
+            
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: row;
+
+            li{
+                margin: 0;
+                
+
+                strong{
+                    display: none;
+                }
+            }
+       }
+   } 
+}
+@media (min-width:1024px){
+    .header_conteiner{
+        margin-top:20px;
+        hr{
+            display: flex;
+            height: 2px;
+            width: 65vh;
+            position: absolute;
+            z-index: 1000;
+            left: 140px;
+            border-color: #979797;
+        }
+        .logo{
+            margin-left:20px ;
+        }
+        .menu{
+            width: 60vw;
+            backdrop-filter: blur(5px);
+
+            .active{
+                
+                position: relative;
+                &::after{
+                    position: absolute;
+                    content: '';
+                    height: 6px;
+        
+                    bottom: -40px;
+                    
+                    margin: 0 auto;
+                    left: 0;
+                      right: 0;
+                    width: 100%;
+                   
+                    
+                    background-color: #fff;
+                  }
+        
+                  
+        
+            }
+           
+        }
+    }
+    
+    
+}
