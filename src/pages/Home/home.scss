@@ -1,0 +1,106 @@
+.home_conteiner{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    background-image: url(../../assets/home/background-home-mobile.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    .home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        button{
+            margin-top: 40px;
+        }
+    }
+
+    .home_content{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        text-align: center;
+        margin: auto;
+        margin-top: 40px;
+        
+        
+       
+        p{
+            color: #D0D6F9;
+            font-size: 16px;
+            font-weight: 500;
+            margin: 0;
+            margin-bottom: 10px ;
+            
+        }
+        h1{
+            font-size: 80px;
+            color: #fff;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+        strong{
+            color: #D0D6F9;
+            font-size: 15px;
+        }
+    }
+}
+@media (min-width:760px) {
+    .home_conteiner{
+        background-image: url(../../assets/home/background-home-tablet.jpg);
+        .home_content{
+            margin-top: 15vh;
+            width: 60vw;
+        }
+        .home{
+            button{
+                margin-top: 10vh;
+            }
+        }
+        
+    }
+}
+
+@media (min-width:1024px) {
+    .home_conteiner{
+        background-image: url(../../assets/home/background-home-desktop.jpg);
+        font-weight: 400;
+        .home{
+            width: 90vw;
+            flex-direction: row;
+            justify-content: space-around;
+            .home_content{
+                width: 35vw;
+                margin: 0;
+                margin-top: 15vh;
+                text-align: start;
+                p{
+                    font-size: 28px;
+                }
+                h1{
+                    font-size: 150px;
+                    margin-left: 0;
+                }
+                strong{
+                    font-size: 18px;
+                }
+            }
+
+            button{
+                align-self: flex-end;
+                height: 274px;
+                width: 274px;
+                font-size: 28px;
+                cursor:pointer;
+            }
+        }
+    }
+}
