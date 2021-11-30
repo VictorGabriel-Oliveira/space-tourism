@@ -1,5 +1,5 @@
 import {Fragment} from 'react'
-import { Button } from "../../components/ButtonCircle/Button"
+import { Button } from "../../components/ButtonExplore/Button"
 import { Header } from "../../components/Header/Header"
 import './home.scss'
 export const Home = () => {
