@@ -1,4 +1,10 @@
 .crew_conteiner{
     height: 100vh;
-    background-color: black;
+    background-image: url(../../assets/crew/background-crew-mobile.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
