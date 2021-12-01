@@ -1,0 +1,17 @@
+.CrewNavBar_conteiner{
+    display: flex;
+    width: 35vw;
+    align-items: center;
+    justify-content: space-around;
+    .link{
+        height: 10px;
+        width: 10px;
+        background-color: #979797;
+        opacity: 17.44%;
+        border-radius: 50%;
+        &.active{
+            opacity: 1;
+            background-color: white;
+        }
+    }
+}
