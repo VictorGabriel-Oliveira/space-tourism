@@ -36,7 +36,7 @@ export const Header = () =>{
                     <li className={`${locationName === '/crew' ? 'active' : '' }`} key="CREW">
                         <strong>02</strong>
                         
-                        <Link to="/crew/douglas-hurlei">CREW</Link>
+                        <Link to="/crew/douglas-hurley">CREW</Link>
                     </li>
                     <li className={`${locationName === '/technology' ? 'active' : '' }`} key="TECHNOLOGY">
                         <strong>03</strong>
