@@ -5,9 +5,9 @@ import vehicleImage from '../../assets/technology/image-launch-vehicle-landscape
 import SpacePortImage from '../../assets/technology/image-spaceport-landscape.jpg'
 import CapsuleImage from '../../assets/technology/image-space-capsule-landscape.jpg'
 import { getCurrentPage } from '../../hook/getCurrentPage'
-import { objectType } from '../../types/objectType'
+import { pageInfoTypes } from '../../types/pageInfoType'
 export const Technology = () =>{
-    const spacelaunch : objectType[] = [
+    const spacelaunch : pageInfoTypes[] = [
         {
             title:'LAUNCH VEHICLE',
             img:vehicleImage,
