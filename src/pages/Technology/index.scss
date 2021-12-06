@@ -1,0 +1,58 @@
+.Thechnology{
+    background-image: url(../../assets/technology/background-technology-mobile.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    height: 100vh;
+    width: 100vw;
+    .space_lauch{
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        color: #f2f2f2;
+        p{
+            font-size: 16px;
+            font-weight: 600;
+        }
+        strong{
+            color: #979797;
+            margin-right: 10px ;
+        }
+    }
+
+    .image_conteiner{
+        margin-bottom: 40px;
+        >img{
+            width: 100vw;
+            height: 170px;
+        }
+
+    }
+
+    .tecnology_content{
+        width: 90vw;
+        text-align: center;
+        color: #d0d6f9;
+        p{
+            font-size: 14px;
+            font-family: 'Regular';
+            text-transform: uppercase;
+            font-weight: 500;
+
+        }
+        h3{
+            color: #fff;
+            font-size: 24px;
+        }
+        strong{
+            line-height: 25px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+    }
+}
