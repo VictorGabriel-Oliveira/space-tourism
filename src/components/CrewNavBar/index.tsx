@@ -3,7 +3,7 @@ import './index.scss'
 
 export const CrewNavBar = () =>{
     const pathName = useParams().name
-    console.log(pathName)
+    
     return(
         <div className="CrewNavBar_conteiner">
             <Link className={`link ${pathName === 'douglas-hurley'? 'active' : ''}`}  to="/crew/douglas-hurley">  </Link>

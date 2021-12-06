@@ -41,7 +41,7 @@ export const Header = () =>{
                     <li className={`${locationName === '/technology' ? 'active' : '' }`} key="TECHNOLOGY">
                         <strong>03</strong>
                         
-                        <Link to="/technology">TECHNOLOGY</Link>
+                        <Link to="/technology/launch-vehicle">TECHNOLOGY</Link>
                     </li>
                 </ul>
         </div>
