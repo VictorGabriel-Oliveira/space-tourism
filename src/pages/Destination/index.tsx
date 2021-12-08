@@ -1,5 +1,5 @@
 import './index.scss'
-import { useParams } from "react-router-dom";
+
 import { Header } from '../../components/Header/Header';
 import {DestinationNavBar} from '../../components/DestinationNavBar/index'
 
@@ -8,7 +8,7 @@ import MoonWebp from '../../assets/destination/image-moon.webp'
 import Mars from '../../assets/destination/image-mars.png'
 import Europa from '../../assets/destination/image-europa.png'
 import Titan from '../../assets/destination/image-titan.png'
-import { useEffect, useState } from 'react';
+
 import { getCurrentPage } from '../../hook/getCurrentPage';
 import { pageInfoTypes } from '../../types/pageInfoType';
 
@@ -67,41 +67,48 @@ export const Destination = () => {
 
         <div className="destination_conteiner">
             <Header/>
-            <div className="pick_your_destination">
-                <strong>01</strong>
-                <p>Pick your destinatio</p>
-            </div>
-            <div className="image_conteiner">
-                <img  src={currentDestination?.img} alt="" />
-            </div>
-            <DestinationNavBar/>
-            <div className="destination_content">
-                <h1 className="title">
-                    {currentDestination?.title}
-                </h1>
-                <p className="about">
-                   {currentDestination?.description}
-                </p>
-            </div>
-            <hr/>
-            <div className="destine_content">
-                <div className="destine_info">
-                    <p>
-                        AVG. DISTANCE
-                    </p>
-                    <h3>
-                        {currentDestination?.distance}
-                    </h3>
+            <div className="first_content">
+                <div className="pick_your_destination">
+                    <strong>01</strong>
+                    <p>Pick your destination</p>
                 </div>
-                <div className="destine_info">
-                    <p>
-                        AVG. DISTANCE
-                    </p>
-                    <h3>
-                        {currentDestination?.timeOfTravelend} 
-                    </h3>
+                <div className="image_conteiner">
+                    <img  src={currentDestination?.img} alt="" />
                 </div>
             </div>
+            
+            
+            <div className="second_content">
+                <DestinationNavBar/>
+                <div className="destination_content">
+                    <h1 className="title">
+                        {currentDestination?.title}
+                    </h1>
+                    <p className="about">
+                    {currentDestination?.description}
+                    </p>
+                </div>
+                <hr/>
+                <div className="destine_content">
+                    <div className="destine_info">
+                        <p>
+                            AVG. DISTANCE
+                        </p>
+                        <h3>
+                            {currentDestination?.distance}
+                        </h3>
+                    </div>
+                    <div className="destine_info">
+                        <p>
+                            AVG. DISTANCE
+                        </p>
+                        <h3>
+                            {currentDestination?.timeOfTravelend} 
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            
            
         </div>
     )

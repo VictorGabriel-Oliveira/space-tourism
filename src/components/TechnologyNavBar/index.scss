@@ -25,3 +25,23 @@
     }
 
 }
+
+@media (min-width:750px) {
+    .navBar_conteiner{
+        width: 210px;
+        .link{
+            height: 60px;
+            width: 60px;
+        }
+    }
+}
+@media (min-width:1024px) {
+    .navBar_conteiner{
+        position: absolute;
+        flex-direction: column;
+        left: 5vw;
+        top: 35vh;
+        height: 35vh;
+        margin-top: 50px;
+    }
+}

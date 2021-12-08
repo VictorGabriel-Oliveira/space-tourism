@@ -42,6 +42,8 @@ export const Technology = () =>{
     ]
 
     const currentPageInfo = getCurrentPage(spacelaunch)
+    
+
     return (
         <div className="Thechnology">
             <Header/>
@@ -49,8 +51,8 @@ export const Technology = () =>{
                 <strong>03</strong>
                 <p>space launch 101 </p>
             </div>
-            <div className="image_conteiner">
-                <img src={currentPageInfo?.img} alt="" />
+            <div className={`image_conteiner ${currentPageInfo?.title.replaceAll(' ', '_')}`}>
+                
             </div>
             <ThechnologyNavBar/>
             <div className="tecnology_content">

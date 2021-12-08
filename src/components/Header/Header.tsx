@@ -9,8 +9,7 @@ export const Header = () =>{
     function handleOpenCloseMenuh (){
         setMenuState(!menusState)
     }
-    const locationName = useLocation().pathname
-
+    const locationName = useLocation().pathname.split('/')[1]
     
     return(
         <div className="header_conteiner">
@@ -20,25 +19,25 @@ export const Header = () =>{
             <div className="navBar">
                 <img src={NavBar} alt="" onClick={handleOpenCloseMenuh} />
             </div>
-            <hr/>
+            <hr className="header_hr"/>
             <ul className="menu" style={{display:`${menusState ? 'flex' : 'none'}`}}>
                     <img  className="close" src={Close} alt="" onClick={handleOpenCloseMenuh}/>
-                    <li className={`${locationName === '/' ? 'active' : '' }`} key="HOME">
+                    <li className={`${locationName === '' ? 'active_header' : '' }`} key="HOME">
                         <strong>00</strong>
                         <Link to="/">HOME</Link>
                         
                     </li>
-                    <li className={`${locationName === '/destination' ? 'active' : '' }`} key="DESTINATION">
+                    <li className={`${locationName === 'destination' ? 'active_header' : '' }`} key="DESTINATION">
                         <strong>01</strong>
                         
-                        <Link to="/destination/moon">DESTINATION</Link>
+                        <Link  to="/destination/moon">DESTINATION</Link>
                     </li>
-                    <li className={`${locationName === '/crew' ? 'active' : '' }`} key="CREW">
+                    <li className={`${locationName === 'crew' ? 'active_header' : '' }`} key="CREW">
                         <strong>02</strong>
                         
                         <Link to="/crew/douglas-hurley">CREW</Link>
                     </li>
-                    <li className={`${locationName === '/technology' ? 'active' : '' }`} key="TECHNOLOGY">
+                    <li className={`${locationName === 'technology' ? 'active_header' : '' }`} key="TECHNOLOGY">
                         <strong>03</strong>
                         
                         <Link to="/technology/launch-vehicle">TECHNOLOGY</Link>

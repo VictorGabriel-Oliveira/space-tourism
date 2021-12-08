@@ -67,3 +67,83 @@
         }
     }
 } 
+
+@media (min-width:750px) {
+    
+    .crew_conteiner{
+        position: relative;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+
+        .header_conteiner{
+            position: absolute;
+            top: 0;
+        }
+        .meet_your_crew{
+            position: absolute;
+            top: 15vh;
+            left: 10px;
+        }
+
+        .professional_content{
+            position: absolute;
+            top: 25vh;
+            width: 60vw;
+            
+        }
+        .CrewNavBar_conteiner{
+            position: absolute;
+            top: 43vh;
+        }
+        hr{
+            display: none;
+        }
+        .image_conteiner{
+            img{
+                position: absolute;
+                bottom: 0;
+                height: 532px;
+                width: 456px;
+            }
+        }
+    }
+}
+
+@media (min-width:1024px) {
+    .crew_conteiner{
+        
+        flex-direction: row-reverse;
+        .meet_your_crew{
+            left: -20vw;
+        }
+        .image_conteiner{
+            position: relative;
+            bottom: -50vh;
+        }
+        .professional_content{
+            position: relative;
+            left: -20vw;
+            top: 0px;
+            align-items: flex-start;
+            width: 30vw;
+            p{
+                text-align: start;
+                font-size: 32px;
+            }
+            h3{
+                text-align: start;
+                font-size: 56px;
+            }
+            strong{
+                text-align: start;
+                font-size: 18px;
+            }
+        }
+        .CrewNavBar_conteiner{
+            position: relative;
+            left: -50vw;
+            top: 30vh;
+        }
+    }
+}

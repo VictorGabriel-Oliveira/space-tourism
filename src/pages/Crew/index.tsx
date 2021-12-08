@@ -1,10 +1,11 @@
 import { CrewNavBar } from '../../components/CrewNavBar'
 import { Header } from '../../components/Header/Header'
 import './index.scss'
-import DouglasAvatar from '../../assets/crew/image-douglas-hurley.png'
-import MarkAvatar from '../../assets/crew/image-mark-shuttleworth.png'
-import VictorAvatar from '../../assets/crew/image-victor-glover.png'
-import AnoushehAvatar from '../../assets/crew/image-anousheh-ansari.png'
+import DouglasAvatarWebp from '../../assets/crew/image-douglas-hurley.webp'
+import DouglasAvatar from '../../assets/crew/image-douglas-hurley.webp'
+import MarkAvatar from '../../assets/crew/image-mark-shuttleworth.webp'
+import VictorAvatar from '../../assets/crew/image-victor-glover.webp'
+import AnoushehAvatar from '../../assets/crew/image-anousheh-ansari.webp'
 import { useParams } from 'react-router'
 import { useEffect, useState } from 'react'
 import { getCurrentPage } from '../../hook/getCurrentPage'
@@ -50,6 +51,7 @@ export const Crew = () =>{
             </div>
             <div className="image_conteiner">
                 <img src={currenteProficionals?.img} alt="" />
+                
                 <hr/>
             </div>
             <CrewNavBar/>
